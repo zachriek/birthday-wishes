@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#confetti-canvas {
+    position: absolute;
+    z-index: 2;
+}
+
+.birthday__section {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    background: url('https://i.pinimg.com/564x/ae/2b/60/ae2b603d7ceb5d671af3199f2df7bc3a.jpg') no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.birthday__text {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.birthday__image-wrapper > img {
+    border-radius: 0.25em;
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 0.8rem;
+    height: 0.8rem;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+    width: 1rem;
+    height: 1rem;
+}
